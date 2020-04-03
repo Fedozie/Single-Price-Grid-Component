@@ -1,0 +1,119 @@
+:root{
+    --base:'Karla', sans-serif;
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{
+    background-color: var(--Light-Gray);
+}
+
+.whole-doc{
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 390px;
+}
+
+.header{
+    background-color: white;
+    font-family: var(--base);
+    height: 210px;
+    padding: 0px 20px;
+    font-size: larger;
+    border-top-right-radius:15px;
+    border-top-left-radius: 15px;
+}
+
+.header-text{
+    padding-left: 20px;
+}
+
+.header h1{
+    color: var(--Cyan);
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.header h6 span{
+    color: var(--Bright-Yellow);
+    line-height: 2.5rem;
+}
+
+.header h6:not(span){
+    color: var(--Grayish-Blue);
+    line-height: 1rem;
+}
+
+.main{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.main-left{
+    font-family: var(--base);
+    background-color: var(--Cyan);
+    width: 500px;
+    height: 350px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-left{
+    margin-top: 50px;
+    line-height: 3rem;
+    padding: 0px 20px;
+}
+
+.main-left h3, p, button{
+    margin: 0px 20px;
+    color: var(--Light-Gray);
+}
+
+.main-left p span{
+    font-size: xx-large;
+}
+
+.main-left p:not(span){
+    font-size: large;
+}
+
+.main-left button{
+    cursor: pointer;
+    margin-top: 40px;
+    background-color: var(--Bright-Yellow);
+    width: 270px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 600;
+    margin-left: 38px;
+    box-shadow: 3px 3px 9px rgba(33, 34, 33, 0.432);
+    transform: color 0.2s ease-in-out;
+}
+
+.main-left button :hover{
+    color: hsla(71, 97%, 61%, 0.774);
+}
+
+.main-right{
+    font-family: var(--base);
+    background-color: hsl(179, 44%, 54%);
+    width: 500px;
+    border-bottom-right-radius: 15px;
+}
+
+.main-right h3{
+    color: var(--Light-Gray);
+    margin-left: 20px;
+}
+
+.text-right{
+    margin-top: 55px;
+    line-height: 1.85rem;
+    padding: 0px 20px;
+}
+
+/**{
+    border: 2px solid red;
+}*/
