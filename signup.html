@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <span><a href="index.html"></a></span>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <div>
+                First name:<br>
+                <input type="text" name="firstname"/><br>
+                Last name:<br>
+                <input type="text" name="lastname"/> <br>
+            </div>
+            
+            <div>
+                Email:<br>
+                <input type="email"/><br>
+                Mobile Number:<br>
+                <input type="tel"/><br>
+                Address:<br>
+                <textarea>
+
+                </textarea>
+            </div>
+
+            <ul>
+                <li>Gender</li>
+                <li>
+                    <input type="radio" name="gender" id="male" value="male"/>
+                    <label for="male">Male</label>
+                    <div class="check">
+                        <div class="inner"></div>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="gender" id="female" value="female"/>
+                    <label for="female">Female</label>
+                    <div class="check">
+                        <div class="inner"></div>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="gender" id="other" value="other"/>
+                    <label for="other">Other</label>
+                    <div class="check">
+                        <div class="inner"></div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Questionnaire 
+            </legend>
+
+            <div>
+                What device do you often use to listen tutorials?<br>
+                <select>
+                    <option value="phone">Phone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="monitor">External Monitor</option>
+                </select><br>
+            </div>
+
+            <div>
+                Why do you want to learn to code?<br>
+                <select>
+                    <option value="job">To get a job</option>
+                    <option value="fun">Because it is fun</option>
+                    <option value="skill">Because you want to learn a skill</option>
+                    <option value="build">Because you want to build something</option>
+                    <option value="alternative">Others</option>
+                </select> <br>
+            </div>
+           
+            <div>
+                How many hours a day can you dedicate to coding?<br>
+                <select>
+                    <option value="less">Less than an hour</option>
+                    <option value="two">1 - 2 Hours</option>
+                    <option value="four">3 - 4 Hours</option>
+                    <option value="six">4 - 6 Hours</option>
+                    <option value="more">More than six hours</option>
+                </select>
+            </div> 
+        </fieldset>
+
+       <div class="last">
+            <div>
+                <button>
+                    Sign Up
+                </button>
+            </div>
+            <p>
+                Already a member? <a href="#">
+                Sign In
+            </a>
+            </p>
+       </div>
+    </form>
+</body>
+</html>
