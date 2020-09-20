@@ -55,15 +55,18 @@ body{
 }
 
 button{
-    color: var(--Light-Gray);
     background-color: var(--Bright-Yellow);
     border: none;
     border-radius: 5px;
     width: 250px;
     height: 55px;
-    /*margin: 0 auto;*/
     font-size: 20px;
     font-weight: 700;
+}
+
+button a{
+    color: var(--Light-Gray);
+    text-decoration: none;
 }
 
 .bottom-mid{
@@ -93,8 +96,44 @@ button{
     text-decoration: none;
 }
 
+.attribution a:hover{
+    color: var(--Cyan);
+}
+
 @media only screen and (max-width:320px){
     button{
         width: 220px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 40px; 
+    }
+
+    .header, .attribution{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .bottom-mid{
+        border-bottom-left-radius: 0px;
+    }
+    
+    .top-mid{
+        border-bottom-left-radius: 8px;
+    }
+
+    button{
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    button:hover{
+        background-color: hsl(71, 84%, 43%);
+        box-shadow: 0px 5px 10px hsl(71, 100%, 75%), 0px -5px 10px hsl(71, 100%, 75%);
     }
 }
